@@ -1,0 +1,13 @@
+Courte note - Mini-projet extraction de caractéristiques
+
+Caractéristiques choisies :
+- Couleur : histogrammes HSV (8+4+4 bins) et moments de couleur RGB (moyenne, écart-type), car les fleurs se distinguent surtout par leur couleur.
+- Texture : histogramme LBP uniforme (P=8, R=1) et propriétés GLCM (contraste, homogénéité, énergie, corrélation), pour décrire l'aspect des pétales et du feuillage.
+
+Difficultés :
+- Installer OpenCV dans l'environnement virtuel et télécharger le dataset (environ 218 Mo).
+- Choisir le nombre de bins des histogrammes HSV et les paramètres du LBP (P, R).
+
+Questions pour la séance :
+1. Comment choisir le nombre de bins et les paramètres du LBP (P, R) ? Existe-t-il une méthode pour les optimiser ?
+2. Faut-il normaliser les caractéristiques (couleur, LBP, GLCM) avant la classification, puisqu'elles n'ont pas la même échelle ?
